@@ -10,8 +10,10 @@ namespace Workflow1
     {
         static void Main(string[] args)
         {
-            Activity workflow1 = new Workflow1();
+            Activity workflow1 = new Activity1();
             WorkflowInvoker.Invoke(workflow1);
+            Console.WriteLine("Press ENTER to quit");
+            Console.ReadLine();
         }
     }
 }
